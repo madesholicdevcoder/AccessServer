@@ -1,0 +1,50 @@
+<!-- Responsive Canva Embed -->
+<div class="canva-embed-wrap">
+  <iframe
+    class="canva-embed"
+    src="https://www.canva.com/design/DAGw9XsYVag/Z3mqYkvexgEWhHXY-ZbsYQ/view?utm_content=DAGw9XsYVag&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h03a3e8ce2e"
+    title="Canva design"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="strict-origin-when-cross-origin"
+  ></iframe>
+  <noscript>
+    <p>View this design on Canva:
+      <a href="https://www.canva.com/design/DAGw9XsYVag/Z3mqYkvexgEWhHXY-ZbsYQ/view?utm_content=DAGw9XsYVag&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h03a3e8ce2e" target="_blank" rel="noopener">Open in new tab</a>
+    </p>
+  </noscript>
+</div>
+
+<style>
+  /* Container: keeps the iframe responsive */
+  .canva-embed-wrap {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Modern browsers: use aspect-ratio for perfect scaling */
+  .canva-embed {
+    width: 100%;
+    aspect-ratio: 16 / 9;       /* Adjust if your design is taller. Common alt: 4 / 3 or 9 / 16 */
+    height: auto;               /* With aspect-ratio, browser computes height */
+    border: 0;
+    display: block;
+  }
+
+  /* Legacy fallback: if aspect-ratio unsupported, enforce a 16:9 box */
+  @supports not (aspect-ratio: 1 / 1) {
+    .canva-embed-wrap {
+      position: relative;
+      width: 100%;
+      /* 16:9 padding hack; change to 56.25% for 16:9, 75% for 4:3, 177.78% for 9:16 */
+      padding-top: 56.25%;
+      overflow: hidden;
+    }
+    .canva-embed {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+</style>
